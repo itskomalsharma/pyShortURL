@@ -11,6 +11,10 @@ pyShortURL is a web application which is developed in Python, It uses API, Ajax,
 - random
 - sqlite3
 
+### screenshots
+<a href="#"><img src="https://i.ibb.co/w4w4280/ss2.png" alt="ss2" border="0"></a>
+<a href="#"><img src="https://i.ibb.co/6Jk4PD1/ss3.png" alt="ss3" border="0"></a>
+
 This application is developed in `Python Version 3.9.5`   
 
 ### About me
