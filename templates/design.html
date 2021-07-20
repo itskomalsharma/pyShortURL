@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>URL Shortner by Komal Sharma | Developed in Python</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+</head>
+<body>
+
+ <nav>
+    <div style="background: linear-gradient(286deg, rgba(0,61,223,1) 0%, rgba(0,111,211,1) 100%);" class="nav-wrapper">
+      <a href="#!" class="brand-logo">&nbsp;PyShortURL</a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a class="modal-trigger" href="#modal1">About Me</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <ul class="sidenav" id="mobile-demo">
+   <li><a class="modal-trigger" href="#modal1">About Me</a></li>
+  </ul>
+  
+<div class="container">
+ <div class="row">
+      <div class="col s12 m2"></div>
+      <div class="col s12 m8">
+	  <br>
+	  <br>
+	  <div id="url" class="card" style="padding-left:20px;padding-right:20px;">
+	  <!-- ye phle card , iska id url hai-->
+	  <br>
+	  <br>
+	  <form id="myform" action="{{data['host']}}mydata" method="post">
+         <div class="row">
+		 <center>
+		 <img src="https://i.postimg.cc/gjLft5jN/65BcXtNJ.gif"/></br>
+		 <p>Short your link in just one click, Developed by <b><a href="https://linkedin.com/in/itskomalsharma">Komal Sharma</a></b>, using with Python</p>
+		 </center>
+        <div class="input-field col s12">
+          <i class="material-icons prefix">link</i>
+          <input type="url" id="long_url" name="long_url" class="autocomplete" required>
+          <label for="long_url">Enter your url</label>
+        </div>
+		 <div class="input-field col s12">
+         <center><button type="submit" class="waves-effect waves-light btn red"><i class="material-icons right">send</i>Short my Link</button></center>
+        </div>
+      </div>
+	  </form>
+	  <br>
+      </div>
+	  
+	  <div id="generated" class="card" style="padding-left:20px;padding-right:20px;">
+	  <!-- ye dusra card iska id generated hai-->
+	  <br>
+	  <br>
+	  <center><h5 class="red-text">Short Link has been generated</h5></center>
+	  <br>
+         <div class="row">
+        <div class="input-field col s12">
+          <i class="material-icons prefix">link</i>
+          <input type="url" id="short_url" class="autocomplete" value="{{data['host']}}" readonly >
+          <label for="short_url">Your Short URL</label>
+        </div>
+		 <div class="input-field col s12">
+         <center><button type="submit" id="createnew" class="waves-effect waves-light btn blue"><i class="material-icons right">add</i>Create New</button></center>
+        </div>
+      </div>
+	  <br>
+      </div>
+	  </div>
+      <div class="col s12 m2"></div>
+    </div>
+</div>
+ <!-- Modal Structure -->
+  <div id="modal1" class="modal white">
+    <div class="modal-content">
+	<center>
+	<img width="200" style="border-radius:50%;" src="https://media-exp3.licdn.com/dms/image/C5603AQF8xfzLpUabJw/profile-displayphoto-shrink_800_800/0/1594454563308?e=1631750400&v=beta&t=HYVASTLR16A5MSB6Z9whH-b7VCMALSpwcI39H93_Ze4"/>
+      <h5>Hello, I am Komal Sharma</h5>
+      <p>I love programming, and love to develop new things everyday. Mostly I love html5, php and python.</p>
+	  <p>Reach me on LinkedIn: <b><a href="https://linkedin.com/in/itskomalsharma">Komal Sharma</a></b></p>
+	  <p>My Github: <b><a href="https://github.com/itskomalsharma">Komal Sharma</a></b></p>
+	  <p>PyShortURL Repository: <b><a href="https://github.com/itskomalsharma/pyshorturl">itskomalsharma/myshorturl</a></b></p><hr>
+	  <h6>Language I Know</h6>
+	  <p>
+  <img height="40" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/python/python.png">
+    <img height="40" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/flask/flask.png">
+  <img height="40" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/php/php.png">
+  <img height="40" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/html/html.png">
+  <img height="40" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/css/css.png">
+  <img height="40" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png">
+    <img height="40" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/java/java.png">
+  <img height="40" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/bootstrap/bootstrap.png">
+  <img height="40" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/jquery/jquery.png">
+  <img height="40" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/mysql/mysql.png">
+  <img height="40" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/json/json.png">
+  <img height="40" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/dotnet/dotnet.png">
+</p>
+	  </center>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+	$("#generated").hide();
+	
+	$("#myform").submit(function(e) {
+    var form = $(this);
+    var btntxt = $("button", form).text();
+    $("button", form).text('Please wait...');
+    e.preventDefault();
+    var url = form.attr('action');
+    $.ajax({
+        type: "POST",
+        url: url, 
+        data: form.serialize(),
+        success: function(data) {
+            var obj = JSON.parse(data); 
+            if (obj.status == true) { 
+                //success
+				$("#generated").show();
+				$("#url").hide();
+				$("#short_url").val(obj.code);
+            } else {
+                //failed
+				alert("error");
+            }
+            $("button", form).text(btntxt);
+        }
+    });
+});
+
+$("#createnew").click(function(){
+	$("#generated").hide();
+	$("#url").show();
+	$("#long_url").val("");
+});
+ document.addEventListener('DOMContentLoaded', function() {
+    var instances = M.Sidenav.init(document.querySelectorAll('.sidenav'), {});
+    var instances = M.Modal.init(document.querySelectorAll('.modal'), {});
+  });
+</script>
+</body>
+</html>
